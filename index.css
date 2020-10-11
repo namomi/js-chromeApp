@@ -1,0 +1,143 @@
+body {
+  color: whitesmoke;
+  text-shadow: rgb(23, 223, 146) 1px 0 20px;
+}
+body::selection {
+  background-color: whitesmoke;
+}
+/*body {
+  color: #fafbfc;
+}*/
+
+/*.btn {
+  cursor: pointer;
+}
+
+.clicked {
+  color: #7f8c8d;
+}*/
+
+.form,
+.greetings {
+  display: none;
+}
+
+/*.showing {
+  display: block;
+}*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.js-clock {
+  display: flex;
+  justify-content: center;
+}
+
+.clock__time {
+  font-size: 150px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.showing {
+  display: flex;
+  justify-content: center;
+}
+input {
+  border: none;
+  background: none;
+  text-align: center;
+}
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: whitesmoke;
+  text-shadow: rgb(138, 25, 231) 1px 0 10px;
+}
+input::selection {
+  background-color: whitesmoke;
+}
+.input__name {
+  font-size: 50px;
+  font-weight: 500;
+  color: whitesmoke;
+  text-shadow: rgb(138, 25, 231) 1px 0 10px;
+}
+.greetings {
+  font-size: 50px;
+  background: none;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+.input__toDo {
+  font-size: 50px;
+  background: none;
+  font-weight: 600;
+  color: whitesmoke;
+  text-shadow: rgb(138, 25, 231) 1px 0 10px;
+  margin-top: 0px;
+}
+
+.js-toDoForm {
+  display: flex;
+  justify-content: center;
+}
+.js-toDoList {
+  padding: 20px;
+  font-size: 40px;
+  background: none;
+  font-weight: 500;
+  color: whitesmoke;
+  text-shadow: rgb(252, 13, 200)) 1px 0 10px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: none;
+  font-size: 50px;
+  text-align: center;
+  border: none;
+  color: whitesmoke;
+  text-shadow: #fc0 1px 0 10px;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  transform: scale(1.2);
+}
+
+.js_weather {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 25px;
+  color: rgb(56, 37, 231);
+}
